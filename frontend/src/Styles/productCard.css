@@ -1,0 +1,26 @@
+.productCard {
+  width: 33%;
+  max-width: 330px;
+  height: 200px;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  cursor: pointer;
+}
+
+.productCard p {
+  transition: 0.5s;
+  bottom: -40px;
+  position: absolute;
+  width: 100%;
+  padding: 5px 0;
+  background-color: rgba(25, 111, 61, 1);
+  color: white;
+  font-weight: 500;
+  text-align: center;
+}
+.productCard:hover p {
+  transition: 0.5s;
+  bottom: 0;
+}

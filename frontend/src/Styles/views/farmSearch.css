@@ -1,0 +1,67 @@
+.farmSearch {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+.farmSearch h2 {
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+  border-bottom: 4px solid rgba(25, 111, 61, 1);
+}
+.farmListContainer {
+  height: 350px;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+.farmSearchInfo {
+  text-align: center;
+  margin-bottom: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.mapContainer {
+  width: 500px;
+  height: 500px;
+  border: 2px solid black;
+  border-radius: 8px;
+  padding: 2px;
+}
+.farmCardContainer {
+  display: flex;
+  padding: 8px;
+  margin: 5px;
+  background-color: rgb(225, 225, 225);
+  border-radius: 8px;
+  cursor: pointer;
+}
+.locationDot {
+  background-color: rgba(25, 111, 61, 1);
+  width: 30px;
+  height: 30px;
+  margin: 5px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  margin-top: 20px;
+}
+.loading img {
+  width: 100px;
+  height: 100px;
+}
+.loading p {
+  font-size: 18px;
+}
+.popup p {
+  margin: 3px 0;
+}

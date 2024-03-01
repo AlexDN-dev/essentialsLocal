@@ -1,0 +1,41 @@
+.orderHistory {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.loaderContainer {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.loaderContainer img {
+  width: 75px;
+  height: 75px;
+  margin-bottom: 15px;
+}
+.history ul {
+  list-style: none;
+}
+.history {
+  max-height: 280px;
+  overflow: scroll;
+}
+.history .orderContainer {
+  display: flex;
+  justify-content: space-between;
+  margin: 3px;
+}
+.history .orderContainer div {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+table {
+  width: 100%;
+  text-align: center;
+}

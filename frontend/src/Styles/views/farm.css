@@ -1,0 +1,97 @@
+.farmContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 24px 0;
+  padding: 0 8px;
+}
+.farm {
+  width: 100%;
+  height: 100%;
+  max-width: 1200px;
+  padding: 5px;
+}
+.farmInformationContainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+}
+.farmInformationContainer > div:first-child {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.farmDescription {
+  margin: 24px 0;
+}
+.farmDescription span {
+  font-size: 24px;
+  font-weight: 500;
+}
+.farmDescription p {
+  font-size: 18px;
+}
+.farmInformationContainer img {
+  width: 40%;
+  max-width: 400px;
+  min-width: 320px;
+  margin-right: 24px;
+}
+.farmInformation {
+  margin-left: 24px;
+  text-align: center;
+}
+.farmInformation h2 {
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+.farmInformation h3 {
+  font-weight: 500;
+  margin: 12px 0;
+}
+.farmProductContainer {
+  margin-top: 50px;
+  border-top: 2px solid rgba(25, 111, 61, 1);
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+.farmProductContainer h2 {
+  font-size: 28px;
+  font-weight: 600;
+  text-align: center;
+}
+.productList {
+  display: flex;
+  justify-content: space-around;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+.loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  margin-top: 20px;
+}
+.loading img {
+  width: 100px;
+  height: 100px;
+}
+.loading p {
+  font-size: 18px;
+}
+
+@media screen and (max-width: 700px) {
+  .farmInformationContainer img {
+    margin: 0;
+  }
+  .farmInformation {
+    margin: 0;
+    margin-top: 24px;
+  }
+}

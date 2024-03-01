@@ -1,0 +1,211 @@
+.dataContainer {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  margin: 10px;
+  background-color: white;
+  min-height: 470px;
+  overflow-x: auto;
+}
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  text-align: center;
+}
+
+.data-table th,
+.data-table td {
+  padding: 8px;
+  text-align: center;
+}
+
+.data-table th {
+  background-color: white;
+  border-bottom: 1px solid #ddd;
+}
+
+.data-table td {
+  cursor: pointer;
+}
+
+.data-table tbody tr:hover {
+  background-color: rgb(240, 240, 240);
+}
+.nameContainer {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+.nameContainer img {
+  border-radius: 50%;
+  width: 50px;
+  margin-right: 15px;
+}
+.pagination {
+  display: flex;
+  align-items: center;
+}
+.pagination button {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  color: rgba(31, 162, 84, 1);
+  border: none;
+  font-weight: 600;
+  font-size: 18px;
+  background-color: white;
+  margin: 0 10px;
+  cursor: pointer;
+}
+.pagination button:hover {
+  background-color: #ddd;
+}
+.pagination .search {
+  width: 200px;
+  font-size: 14px;
+  outline: none;
+  border: 2px solid #ddd;
+  border-radius: 4px;
+  padding: 3px;
+}
+.pagination .search:focus {
+  border: 2px solid #939393;
+}
+.blackScreen {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.requestData {
+  background-color: white;
+  width: fit-content;
+  padding: 25px;
+  margin: 5px;
+  border-radius: 8px;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+}
+.requestData h3 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+.requestData span {
+  font-weight: 500;
+}
+.farmDataAdmin {
+  background-color: white;
+  width: 500px;
+  padding: 25px;
+  margin: 5px;
+  border-radius: 8px;
+  position: relative;
+}
+.farmInfo {
+  display: flex;
+  justify-content: space-between;
+  margin: 8px 0;
+}
+.farmDataAdmin h2 {
+  text-align: center;
+}
+.userData {
+  background-color: white;
+  width: fit-content;
+  padding: 25px;
+  margin: 5px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  z-index: 100;
+}
+.userData h2 {
+  text-align: center;
+}
+.userData img {
+  width: 125px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+.userDataContainer {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+.requestDataContainer {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  flex: 1;
+  margin: 10px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.requestDataContainer p {
+  margin: 5px 0;
+}
+.userDataContainer span {
+  font-weight: 500;
+  font-size: 18px;
+}
+.userName {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+.userInfo {
+  display: flex;
+  justify-content: space-between;
+}
+.userInfo:last-of-type {
+  margin-bottom: 20px;
+}
+.requestInfo {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.requestInfo p {
+  text-align: end;
+}
+.scheduleContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  margin: 10px;
+  text-align: center;
+}
+.requestAnswer {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+.requestAnswer div {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.requestAnswer form textarea {
+  width: 100%;
+  margin-top: 20px;
+  padding: 5px;
+  resize: none;
+}
+.requestAnswer button {
+  width: 100px;
+  margin: 10px;
+  cursor: pointer;
+}

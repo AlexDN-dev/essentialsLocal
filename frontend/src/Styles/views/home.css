@@ -1,0 +1,82 @@
+.whoContainer {
+  color: white;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 50px 20px;
+  flex-wrap: wrap;
+  background: rgb(25, 111, 61);
+  background: linear-gradient(
+    75deg,
+    rgba(25, 111, 61, 1) 5%,
+    rgba(31, 162, 84, 1) 100%
+  );
+}
+
+.whoContainer > div {
+  flex: 1;
+  padding: 0 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.whoContainer img {
+  min-width: 400px;
+  width: 75%;
+}
+.whoContainer h2 {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.whoContainer p {
+  font-size: 22px;
+}
+.homeCardContainer {
+  display: flex;
+  flex-direction: column;
+}
+.homeCardContainer section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+.homeCardContainer h2 {
+  text-align: center;
+  margin: 15px;
+  font-size: 36px;
+}
+.homeCard {
+  background-color: rgba(31, 162, 84, 1);
+  color: white;
+  border-radius: 8px;
+  padding: 10px;
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  min-width: 225px;
+  max-width: 350px;
+  width: calc(25% - 20px);
+}
+.homeCard h2 {
+  margin: 20px;
+  padding: 0 5px;
+  color: white;
+  font-size: 24px;
+}
+
+@media screen and (max-width: 500px) {
+  .whoContainer img {
+    min-width: 300px;
+    width: 300px;
+  }
+  .whoContainer {
+    text-align: center;
+  }
+}

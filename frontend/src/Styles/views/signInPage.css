@@ -1,0 +1,19 @@
+.signInPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.signInPage h2 {
+  font-size: 36px;
+}
+.signInPage p {
+  font-size: 20px;
+}
+
+.signInPanel {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}

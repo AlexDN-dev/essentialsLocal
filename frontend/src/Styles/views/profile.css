@@ -1,0 +1,90 @@
+.profileContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.profile {
+  max-width: 1000px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto 1fr; /* La première colonne est de taille automatique, la deuxième utilise le reste de l'espace disponible */
+  gap: 20px;
+  margin: 20px;
+}
+.mainInformations {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.mainInformations img {
+  width: 125px;
+  height: 125px;
+}
+.mainInformations p {
+  margin: 15px 0;
+  font-size: 18px;
+  font-weight: 500;
+}
+.heroProfile {
+  position: relative;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 12px 36px rgba(0, 0, 0, 0.5);
+  padding: 15px;
+  margin-right: 15px;
+}
+.heroProfile img {
+  border-radius: 50%;
+}
+.profileParams {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+.profileInformationContainer div {
+  display: flex;
+  justify-content: space-between;
+  margin: 8px 0;
+  font-size: 14px;
+}
+.profileInformationContainer div span {
+  font-weight: 500;
+}
+.orderHistoryContainer {
+  position: relative;
+  max-height: 364px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  grid-column: span 1;
+  padding: 15px;
+  margin-left: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 12px 36px rgba(0, 0, 0, 0.5);
+}
+.orderHistoryContainer h3 {
+  font-size: 24px;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 15px;
+}
+.farmParams {
+  position: absolute;
+  top: 10px;
+}
+.adminProfileButton {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+@media (max-width: 800px) {
+  .profile {
+    grid-template-columns: 1fr;
+  }
+  .heroProfile {
+    margin: 0;
+  }
+  .orderHistoryContainer {
+    margin: 0;
+  }
+}

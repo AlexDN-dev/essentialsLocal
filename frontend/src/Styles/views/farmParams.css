@@ -1,0 +1,190 @@
+.paramsContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.paramsContainer h2 {
+  text-align: center;
+}
+.params {
+  max-width: 1300px;
+  width: 100%;
+}
+.paramsCategory {
+  display: flex;
+  justify-content: space-evenly;
+}
+.paramsCategory p {
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.selectedCategory {
+  font-weight: 500;
+  border-bottom: 3px solid green;
+}
+
+.globalParams label {
+  border: none;
+}
+.globalParams form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 550px;
+}
+.globalParams h3 {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.scheduleParams div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5px;
+}
+.globalParamsContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.globalParamsContainer div {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.globalParams input {
+  padding: 3px 2px;
+  border-radius: 4px;
+  border: 1px solid gray;
+}
+.globalParams textarea {
+  width: 500px;
+  height: 75px;
+  resize: none;
+  margin-bottom: 20px;
+  padding: 5px;
+}
+.globalParamsButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 25px;
+}
+.imageContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.imageContainer img {
+  width: 250px;
+}
+.imageUpload {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+.productManagement {
+  max-width: 1000px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.addProductContainer,
+.manageProductContainer {
+  width: 50%;
+  box-sizing: border-box; /* Pour inclure les bordures et les marges dans la largeur */
+  float: left; /* Pour placer les deux div côte à côte */
+  padding: 20px; /* Ajoutez une marge intérieure pour l'espace intérieur */
+}
+.addProductContainer {
+  display: flex;
+  flex-direction: column;
+}
+.addProductContainer h3 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+.imageUpload {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+.imageUpload h4 {
+  margin-bottom: 10px;
+}
+.quantityGestion {
+  text-align: center;
+}
+.quantityGestion p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+.quantityInput {
+  padding: 5px;
+  margin: 5px;
+}
+.productDetails {
+  margin-top: 10px;
+}
+.productDetails input {
+  margin: 5px;
+}
+.manageProductContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.productListContainer {
+  margin-top: 20px;
+  width: 100%;
+  height: 310px;
+  overflow-y: scroll;
+}
+.productFarm {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(230, 230, 230);
+  padding: 8px;
+  margin: 2px;
+  border-radius: 4px;
+}
+.productFarm img {
+  width: 75px;
+}
+.productFarm p {
+  font-size: 12px;
+  text-align: center;
+}
+.productDetails textarea {
+  margin-top: 10px;
+  width: 345px;
+  padding: 5px;
+  resize: none;
+}
+.textTips {
+  font-size: 12px;
+}
+.productFarmButton {
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+}
+.blueButton {
+  background-color: rgb(0, 174, 255);
+}
+.redButton {
+  background-color: red;
+}

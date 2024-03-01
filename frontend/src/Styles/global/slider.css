@@ -1,0 +1,13 @@
+.image-slider {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.image-slider div button {
+  margin: 10px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid grey;
+}

@@ -1,0 +1,134 @@
+.shoppingCardContainer {
+  display: flex;
+  justify-content: space-around;
+  max-width: 1500px;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.shoppingCardContainer > div:first-child {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.shoppingCardContainer > div:last-child {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.halfWidth {
+  width: 50%; /* Chaque élément prend 50% de la largeur */
+}
+
+.shoppingProductList {
+  background-color: #e6e6e6;
+  display: flex;
+  margin: 8px;
+  padding: 5px;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 8px;
+  width: 500px;
+  position: relative;
+}
+.shoppingProductList p {
+  max-width: 100px;
+  text-align: center;
+}
+.shoppingProductList button {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 25px;
+  height: 25px;
+  background: rgb(243, 76, 76);
+  background: linear-gradient(
+    135deg,
+    rgba(243, 76, 76, 1) 0%,
+    rgba(197, 0, 0, 1) 100%
+  );
+  border: none;
+  border-radius: 50%;
+  color: white;
+  cursor: pointer;
+}
+.shoppingProductList img {
+  width: 80px;
+}
+.productShoppingContainer {
+  display: flex;
+  flex-direction: column;
+  max-height: 320px;
+  overflow-y: auto;
+}
+.priceDisplay {
+  text-align: end;
+  font-size: 24px;
+}
+.priceDisplay span {
+  font-weight: 600;
+}
+.selectedRecup {
+  display: flex;
+  margin: 10px 0;
+}
+.selectedRecup div {
+  margin: 0 10px;
+  cursor: pointer;
+  position: relative;
+  transition: 0.5s;
+  border: 2px solid #808080;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flipped {
+  transform: rotate(180deg);
+  transition: 0.5s;
+}
+.livraisonDetails {
+  display: flex;
+  flex-direction: column;
+  width: 502px;
+  align-items: center;
+}
+.livraisonDetails input {
+  margin: 5px;
+  padding: 3px;
+  border: 1px solid #808080;
+  border-radius: 4px;
+}
+.retraitDetails p {
+  text-align: center;
+}
+.farmAddressContainer {
+  text-align: center;
+  margin: 5px 0;
+}
+.orderDetails {
+  width: auto;
+  text-align: center;
+}
+.totalPrice {
+  margin: 10px 0;
+}
+.dialog {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 9999;
+  max-width: 400px;
+  text-align: center;
+}
+.dialog p {
+  margin: 10px 0;
+}

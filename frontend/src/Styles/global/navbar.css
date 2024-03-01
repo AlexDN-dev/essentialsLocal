@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+nav {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 1.5rem 1.35rem;
+  position: relative;
+  z-index: 999;
+}
+.logoIcon {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+}
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem;
+  position: fixed;
+  top: 0;
+  left: 200%;
+  z-index: 25;
+}
+.links.show {
+  left: 0;
+  padding: 6rem 1rem 1rem;
+  background-color: #191a19f2;
+  height: 100vh;
+  width: 100%;
+}
+.links.show a {
+  color: white;
+  width: 100%;
+  padding: 1rem 0;
+  text-align: center;
+}
+.menu {
+  --height: 4px;
+  --width: 16px;
+  --bg: #191a19;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  align-items: flex-end;
+  cursor: pointer;
+  position: absolute;
+  right: 1.35rem;
+  z-index: 50;
+}
+.menu.opened {
+  --bg: white;
+}
+.menu .middle {
+  height: var(--height);
+  width: var(--width);
+  background-color: var(--bg);
+}
+.menu::before,
+.menu::after {
+  content: "";
+  background-color: var(--bg);
+  height: var(--height);
+  transition: 0.2s ease-in-out;
+}
+.menu::before {
+  width: calc(var(--width) / 2);
+}
+.menu::after {
+  width: calc(var(--width) * 1.5);
+}
+.menu.opened::before {
+  width: calc(var(--width) * 1.5);
+}
+.menu.opened::after {
+  width: calc(var(--width) / 2);
+}
+.links div {
+  margin: 10px;
+  position: relative;
+}
+.links div p {
+  position: absolute;
+  top: -15px;
+  right: -10px;
+  background: rgb(25, 111, 61);
+  background: linear-gradient(
+    35deg,
+    rgba(25, 111, 61, 1) 10%,
+    rgba(31, 162, 84, 1) 100%
+  );
+  color: #fff;
+  text-align: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 25px;
+  font-size: small;
+  font-weight: 600;
+}
+.cartShoppingIcon {
+  color: white;
+  cursor: pointer;
+}
+.userIconsContainer {
+  display: flex;
+  align-items: center;
+}
+.userIconsContainer div {
+  margin-right: 25px;
+}
+
+@media screen and (min-width: 1025px) {
+  nav {
+    justify-content: space-between;
+  }
+  .menu {
+    display: none;
+  }
+  .links {
+    position: static;
+    flex-direction: row;
+    gap: 1rem;
+  }
+  .cartShoppingIcon {
+    color: #000;
+  }
+}

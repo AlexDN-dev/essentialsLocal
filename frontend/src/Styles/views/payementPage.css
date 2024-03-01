@@ -1,0 +1,14 @@
+.payementContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.payementContainer img {
+  width: 300px;
+}
+
+.payementContainer p {
+  margin-bottom: 25px;
+}

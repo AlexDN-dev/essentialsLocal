@@ -1,0 +1,81 @@
+.heroBanner {
+  padding: 5px;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.heroBanner h3 {
+  font-size: 24px;
+  display: none;
+}
+.burgerContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 10px;
+  width: 100%;
+}
+.heroBanner img {
+  width: 75px;
+  border-radius: 50%;
+}
+.heroBanner .burgerIcon {
+  background-color: rgb(240, 240, 240);
+  padding: 8px;
+  border-radius: 50%;
+}
+.adminNavbarContainer {
+  height: calc(100vh - 85px);
+  background-color: white;
+  width: fit-content;
+  padding: 10px;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 25px;
+  left: -263px;
+  transition: left 0.5s linear;
+  z-index: 99;
+}
+.opened {
+  left: 0;
+}
+.adminNavbarContainer a {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  margin: 10px 5px;
+  padding: 8px;
+  border-radius: 8px;
+  font-weight: 400;
+}
+.adminNavbarContainer a:hover {
+  transition: 0.25s;
+  background-color: rgba(31, 162, 84, 1);
+}
+.adminNavbarContainer a p {
+  margin-left: 10px;
+}
+.adminContent {
+  display: flex;
+}
+
+@media screen and (min-width: 943px) {
+  .heroBanner .burgerIcon {
+    display: none;
+  }
+  .adminNavbarContainer {
+    left: 0;
+    transition: none;
+    position: relative;
+    width: 290px;
+  }
+  .heroBanner h3 {
+    display: block;
+    width: 320px;
+  }
+}

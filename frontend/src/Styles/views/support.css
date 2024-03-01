@@ -1,0 +1,35 @@
+.support {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+h2 {
+  font-size: 36px;
+  margin: 24px 0;
+}
+.introSupport {
+  text-align: center;
+}
+.supportForm {
+  width: 100%;
+  max-width: 750px;
+  margin: 24px 0;
+  padding: 0 8px;
+}
+.supportFormContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 750px;
+}
+.scheduleFarmContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.scheduleFarmContainer div {
+  width: 50%;
+}
+.scheduleFarmContainer h3 {
+  font-size: 24px;
+}

@@ -1,0 +1,86 @@
+.landingPage {
+  height: 75%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.leftPart {
+  width: 500px;
+  margin: 0px;
+}
+.leftPart h2 span {
+  font-size: 36px;
+  font-weight: 700;
+}
+.leftPart h2 {
+  width: 100%;
+  font-weight: 600;
+  font-size: xx-large;
+}
+.rightPart {
+  position: relative;
+  margin: 30px;
+}
+.rightPart img {
+  width: 300px;
+  height: 300px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 12px 36px rgba(0, 0, 0, 0.5);
+}
+.rightPart .frontImg {
+  position: relative;
+  z-index: 5;
+  display: block;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 12px 36px rgba(0, 0, 0, 0.5);
+}
+.rightPart .behindImg {
+  position: absolute;
+  z-index: 2;
+  left: 75px;
+  top: -75px;
+}
+.bars div {
+  height: 20px;
+  margin: 15px 0;
+  background-color: rgb(31, 162, 84);
+}
+.bar1 {
+  width: 250px;
+}
+.bar2 {
+  min-width: 300px;
+  width: 400px;
+}
+@media screen and (max-width: 1025px) {
+  .rightPart {
+    display: none;
+  }
+  .bars {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  .bars div {
+    height: 15px;
+    margin: 10px 0;
+  }
+  .bar1 {
+    width: 75%;
+    max-width: 250px;
+  }
+  .bar2 {
+    width: 75%;
+    max-width: 400px;
+  }
+  .leftPart h2 {
+    text-align: center;
+  }
+  .leftPart h2 span {
+    font-size: 7vw;
+    font-weight: 700;
+  }
+  .leftPart h2 {
+    font-size: 4vw;
+  }
+}

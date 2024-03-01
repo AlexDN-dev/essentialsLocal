@@ -1,0 +1,17 @@
+.customButton {
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  background: rgb(25, 111, 61);
+  background: linear-gradient(
+    135deg,
+    rgba(25, 111, 61, 1) 10%,
+    rgba(31, 162, 84, 1) 100%
+  );
+  border: none;
+  outline: none;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 5px;
+}

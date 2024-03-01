@@ -1,0 +1,100 @@
+.product {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.productContainer {
+  width: 100%;
+  max-width: 1000px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+.productContainer img {
+  width: 350px;
+  max-width: 350px;
+}
+.productInformation {
+  margin: 24px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  max-width: 300px;
+  width: 100%;
+}
+.productInformation p {
+  font-size: 26px;
+  font-weight: 600;
+}
+.productInformation span {
+  font-size: 14px;
+  margin: 10px 0;
+}
+.productInformation h3 {
+  font-size: 16px;
+}
+input[type="radio"] {
+  display: none;
+}
+label {
+  padding: 0.5em 1em;
+  display: inline-block;
+  border: 1px solid rgb(25, 111, 61);
+  cursor: pointer;
+  margin: 5px;
+  border-radius: 8px;
+}
+.blank-label {
+  display: none;
+}
+input[type="radio"]:hover + label {
+  background: rgb(106, 109, 110);
+  color: #fff;
+}
+input[type="radio"]:checked + label {
+  background: rgba(31, 162, 84, 1);
+  color: #fff;
+}
+.farmProductContainer {
+  margin-top: 50px;
+  border-top: 2px solid rgba(25, 111, 61, 1);
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+.farmProductContainer div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.no-results {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.no-results img {
+  width: 75%;
+  margin-bottom: 24px;
+}
+.loading img {
+  width: 100px;
+  height: 100px;
+}
+.loading p {
+  font-size: 18px;
+}
+.productInformation .price {
+  font-size: 20px;
+  text-align: end;
+  margin: 10px;
+}
+.quantityContainer {
+  text-align: center;
+  margin-top: 20px;
+}
